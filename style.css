@@ -43,3 +43,36 @@
 
     color: rgba(0, 0, 0, 0.4);
 }
+.back{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F0F0F0;
+    text-align: left;
+}
+.bg-img{
+    background-image: url(img/bg-img.svg);
+    background-size: cover;
+
+}
+.slogan2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50.478px;
+    line-height: 62px;
+    /* identical to box height */   
+    
+    letter-spacing: 0.19em;
+
+    color: #F0F0F0;
+}
+.bg-green{
+    background: rgba(66, 122, 81, 0.5);
+}
+.btn-perxod{
+    background: #F0F0F0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}

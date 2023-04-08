@@ -11,7 +11,7 @@ session_start();
             header('location: admin.php');
         }
         else{
-            header('location: main.php');
+            header('location: start.php');
         }
 	}
 	else{
