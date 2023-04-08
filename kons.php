@@ -58,6 +58,7 @@
             </div>
         </div>
         <div class="col-2 mx-auto mt-5">
+            <form action="car.php" method="get"></form>
             <button class="btn-katalog text text-center pt-2 pb-2 pr-5 pl-5">
                 <div class="row">
                     <div class="mt-2">

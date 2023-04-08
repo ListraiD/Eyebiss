@@ -66,7 +66,7 @@
                                     <div class="row">
                                         <div class="col-10 mt-4 mx-auto">
                                             <img src="img/card2.svg" alt="" srcset="">
-                                                <form action="gis.php" method="get">
+                                                <form action="gis1.php" method="get">
                                                     <div class="row">
                                                         <div class="col-5 mx-auto ">
                                                             <button class="text btn-perxod pt-2 pb-2 pr-5 pl-5">
