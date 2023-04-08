@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body >
-        <div class="col-12 pt-4 pb-4 header-color">
+        <div class="col-12 pt-3 pb-3 header-color">
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
@@ -50,23 +50,30 @@
                 </div>
             </div>
         </div>
-        <div class="col-10 mx-auto box pt-2 pb-2 pr-2 pl-2 mt-5">
-            <p class="text-center text txt">Информационный стенд</p>
+        <div class="col-12 bg-krugi">
             <div class="row">
-                <div class="col-10 mx-auto">
-                    <p class="text-center text txt-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime at omnis vel et nobis illum recusandae delectus, a sapiente distinctio tempore sit debitis sequi, rem quas! Vitae, maxime dolorum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime at omnis vel et nobis illum recusandae delectus, a sapiente distinctio tempore sit debitis sequi, rem quas! Vitae, maxime dolorum.
-                    </p>
+                <div class="col-10 mx-auto box pt-4 pb-4 pr-4 pl-4">
+                    <p class="text-center text txt">Информационный стенд</p>
+                    <div class="row">
+                        <div class="col-5 my-auto mx-auto">
+                            <p class="text-center text txt-default"> 
+                                На сайте EYEBISS вы можете проконсултироваться со специалистом по интересующей вас теме.
+                                Вы можете выбрать в каталоге, тему, по которой вы бы хотели получить консультацию,
+                                после этого вы можете заполнить форму, котору посмотрит консультант и даст свой ответ.
+                            </p>
+                        </div>
+                        <div class="col-5 my-auto mx-auto">
+                            <img class="w-100" src="img/comp.svg" alt="" srcset="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-2 mx-auto mt-5">
+        <div class="col-2 mx-auto mt-2">
             <form action="car.php" method="GET">
-            <button class="btn-katalog text text-center pt-2 pb-2 pr-5 pl-5">
-
-                        КАТАЛОГ
-   
-            </button>
+                <button class="btn-katalog text text-center pt-2 pb-2 pr-5 pl-5">
+                    КАТАЛОГ
+                </button>
             </form>
         </div>
     <!-- Optional JavaScript; choose one of the two! -->

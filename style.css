@@ -90,7 +90,7 @@
     line-height: 23px;
 }
 .bg-krugi{
-    background-image: url(img/bg-img.svg);
+    background-image: url(img/bg-krugi.svg);
     background-size: cover;
 }
 .txt{
@@ -173,4 +173,7 @@ height: 500px;
     letter-spacing: 0.1em;
     
     color: #FBFBFB;
+}
+.img-car{
+    transition: 10s;
 }

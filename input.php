@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back" href="index.php">
+                                        <a class="text back" href="car.php">
                                             НАЗАД
                                         </a>
                                     </div>
