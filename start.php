@@ -65,17 +65,8 @@
                                 <div class="col-10 mx-auto mt-5">
                                     <div class="row">
                                         <div class="col-10 mt-4 mx-auto">
-                                            <img src="img/card2.svg" alt="" srcset="">
-                                                <form action="gis1.php" method="get">
-                                                    <div class="row">
-                                                        <div class="col-5 mx-auto ">
-                                                            <button class="text btn-perxod pt-2 pb-2 pr-5 pl-5">
-                                                                ПЕРЕЙТИ
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                                <a href="gis.php"><img src="img/card2.svg" alt="" srcset=""></a>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,16 +76,8 @@
                                     <div class="col-10 start-card mx-auto ">
                                         <div class="row">
                                             <div class="col-10 mt-4 mx-auto">
-                                                <img src="img/card.svg" alt="" srcset="">
-                                                <form action="kons.php" method="get">
-                                                    <div class="row">
-                                                        <div class="col-5 mx-auto ">
-                                                            <button class="text btn-perxod pt-2 pb-2 pr-5 pl-5">
-                                                                ПЕРЕЙТИ
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <a href="kons.php"><img src="img/card.svg" alt="" srcset=""></a>
+                                            
                                             </div>
                                         </div>
                                     </div>

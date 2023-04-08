@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body >
-        <div class="col-12 pt-4 pb-4 header-color">
+        <div class="col-12 pt-3 pb-3 header-color">
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
@@ -26,67 +26,80 @@
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back" href="car.php">
+                                        <a class="text back" href="start.php">
                                             НАЗАД
                                         </a>
                                     </div>
                                 </div>
                             </div>
                        </div>
-                      
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-8 mx-auto">
-        <div class="row">
-            <div class="col-11 mx-auto mt-2">
-                <div class="row">
-                    <div class="col-12 pt-5 pb-5">
-                        <form action="insert2.php" method="POST">
-                            <div class="row">
-                                <div class="col-10 mx-auto">
-
-                                    <div class="row">
-                                        <div class="col-10 mx-auto">
-                                            <input type="text" name="imya" class="form-control login" placeholder="Фамилия Имя Отчество">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-5 pt-3">
-                                <div class="col-10 mx-auto">
-                                    
-                                    <div class="row">
-                                        <div class="col-10 mx-auto">
-                                            <input type="number" name="phone" class="form-control login" placeholder="номер телефона">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-5 pt-3">
-                                <div class="col-10 mx-auto">
-                                    
-                                    <div class="row">
-                                        <div class="col-10 mx-auto">
-                                            <input type="text" name="problem" class="form-control login txt-area" placeholder="Опишите вашу проблему">
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 mx-auto mt-5 pt-3">
-                                <button class="form-control text btn-log-reg">
-                                    Подать заявку
+                       <div class ="col-2 mt-1">
+                            <img class="w-100" src="img/logo3.svg" alt="" srcset="">
+                       </div>
+                       <div class ="col-2 ml-auto">
+                            <form action="anketi.php" method="get">
+                                <button class="btn-kons text">
+                                    ваши заявки
+                                    <img src="img/list.svg" alt="" srcset="">
                                 </button>
-                            </div>
-                        </form>
+                            </form>
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="col-12 bg-input">
+            <div class="row bg-input2">
+                <div class="col-8 mx-auto">
+                    <div class="row">
+                        <div class="col-11 mx-auto mt-2">
+                            <div class="row">
+                                <div class="col-12 pt-5 pb-5 box-input">
+                                    <form action="insert2.php" method="POST">
+                                        <h1 class="text-center text h1-input">СТРАТЕГИЧЕСКИЕ</h1>
+                                        <div class="row mt-3">
+                                            <div class="col-10 mx-auto">
+                                                <div class="row">
+                                                    <div class="col-10 mx-auto">
+                                                        <input type="text" name="imya" class="form-control login text" placeholder="Фамилия Имя Отчество">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3 pt-3">
+                                            <div class="col-10 mx-auto">
+                                                
+                                                <div class="row">
+                                                    <div class="col-10 mx-auto">
+                                                        <input type="number" name="phone" class="form-control login text" placeholder="номер телефона">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3 pt-3">
+                                            <div class="col-10 mx-auto">
+                                                <div class="row">
+                                                    <div class="col-10 mx-auto">
+                                                        <textarea type="text" name="problem" class="form-control txt-area text" placeholder="Опишите вашу проблему"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 mx-auto mt-3 pt-3">
+                                            <button class="form-control text btn-log-reg">
+                                                Подать заявку
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
         
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -21,7 +21,7 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
     <link rel="stylesheet" href="style.css">
   </head>
   <body >
-        <div class="col-12 pt-4 pb-4 header-color">
+        <div class="col-12 pt-3 pb-3 header-color">
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
@@ -32,15 +32,24 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back" href="kons.php">
+                                        <a class="text back" href="start.php">
                                             НАЗАД
                                         </a>
                                     </div>
                                 </div>
                             </div>
                        </div>
-                      
-                       
+                       <div class ="col-2 mt-1">
+                            <img class="w-100" src="img/logo3.svg" alt="" srcset="">
+                       </div>
+                       <div class ="col-2 ml-auto">
+                            <form action="anketi.php" method="get">
+                                <button class="btn-kons text">
+                                    ваши заявки
+                                    <img src="img/list.svg" alt="" srcset="">
+                                </button>
+                            </form>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -48,70 +57,88 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
     <?php
         for($i=0;$i<mysqli_num_rows($query);$i++){
              $stroka = $query->fetch_assoc();
+             
     ?>
-    <div class="col-8 mx-auto mt-3 bg-anket">
-        <p class="text-center txt-tem">ТЕМА</p>
-        <div class="row">
-            <div class="col-11 mx-auto mt-2">
-                <div class="row">
-                    <div class="col-12 pt-5 pb-5">
-                        <form action="insert2.php" method="POST">
+     <div class="col-12 bg-input">
+            <div class="row">
+                <div class="col bg-input2">
+                    <div class="row">
+                        <div class="col-8 mx-auto">
                             <div class="row">
-                                <div class="col-10 mx-auto">
+                                <div class="col-11 mx-auto mt-2">
                                     <div class="row">
-                                        <div class="col-10 mx-auto lol">
-                                            <?php echo $stroka['imya']?>
+                                        <div class="col-12 pt-5 pb-5 box-input">
+                                            <h1 class="text-center text h1-input">СТРАТЕГИЧЕСКИЕ</h1>
+                                            <div class="row mt-3">
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-10 mx-auto">
+                                                            <input value="<?php echo $stroka['imya']?>" type="text" name="imya" class="form-control login text" placeholder="Фамилия Имя Отчество">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 pt-3">
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-10 mx-auto">
+                                                            <input value="<?php echo $stroka['phone']?>" type="number" name="phone" class="form-control login text" placeholder="номер телефона">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 pt-3">
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-10 mx-auto">
+                                                            <textarea value="" type="text" name="problem" class="form-control txt-area text" placeholder="Опишите вашу проблему"><?php echo $stroka['problem']?>
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-5 pt-3">
-                                <div class="col-10 mx-auto">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="row">
+                                <div class="col-11 mx-auto mt-2">
                                     <div class="row">
-                                        <div class="col-10 mx-auto lol">
-                                            <?php echo $stroka['phone']?>
+                                        <div class="col-12 pt-5 pb-5 box-input">
+                                            <h1 class="text-center text h1-input">ОТВЕТ ОТ КОНСУЛЬТАНТА</h1>
+                                            <div class="row mt-3">
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-10 mx-auto">
+                                                            <input value="<?php echo $stroka['imya']?>" type="text" name="imya" class="form-control login text" placeholder="Фамилия Имя Отчество">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3 pt-3">
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-10 mx-auto">
+                                                            <textarea value="" type="text" name="problem" class="form-control txt-area text" placeholder="Опишите вашу проблему"><?php echo $stroka['problem']?>
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-5 pt-3 ">
-                                <div class="col-10 mx-auto">
-                                    <div class="row">
-                                        <div class="col-10 mx-auto lol-2">
-                                            <?php echo $stroka['problem']?>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-8 mx-auto mt-3 bg-anket">
-        <div class="row">
-            <div class="col-11 mx-auto mt-2">
-                <div class="row">
-                    <div class="col-12 pt-2 pb-2">
-                        <form action="insert2.php" method="POST">
-                            <div class="row mt-2  ">
-                                <div class="col-10 mx-auto">
-                                    <div class="row">
-                                        <div class="col-10 mx-auto lol-2">
-                                            ответ от консультанта
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
     <?php } ?>
         
     <!-- Optional JavaScript; choose one of the two! -->

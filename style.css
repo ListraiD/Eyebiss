@@ -101,16 +101,15 @@
 }
 .box{
     background: #F3F3F3;
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 .txt-default{
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-
-color: #000000;
+    color: #000000;
 }
 .btn-katalog{
     background: #95C5B2;
@@ -123,15 +122,15 @@ color: #000000;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-    height: 740px;
+    height: 100vh;
 }
 .txt-index{
     font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 59px;
-letter-spacing: 0.095em;
-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.095em;
+    color: #FFFFFF;
 }
 .txt-index2{
     font-style: normal;
@@ -142,11 +141,10 @@ color: #FFFFFF;
 }
 .btn-index{
     background: #FFFFFF;
-border-radius: 50px;
+    border-radius: 50px;
 }
 .txt-area{
-    
-height: 500px;
+    height:30vh ;
 }
 .lol{
     background: #FBFBFB;
@@ -176,4 +174,51 @@ height: 500px;
 }
 .img-car{
     transition: 10s;
+}
+.bg-admin{
+    background-image: url(img/bg-admin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.h1-admin{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.165em;
+}
+.btn-admin{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    background: #F0F0F0;
+    border-radius: 25px;
+    margin-top: 60vh;
+}
+.bg-input{
+    background: radial-gradient(75.27% 67.87% at 90.47% 86.83%, rgba(28, 156, 103, 0.4) 0%, rgba(130, 228, 186, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(111.21% 100.27% at 7.89% 53.56%, rgba(106, 199, 49, 0.59) 0%, rgba(200, 237, 176, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #0F0F0F;
+
+}
+.bg-input2{
+    background-image: url(img/bg-image-admin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.box-input{
+    background: linear-gradient(243.73deg, rgba(95, 145, 44, 0.6) 5.71%, rgba(68, 179, 126, 0) 98.72%), #202D23;
+    border-radius: 50px;
+}
+.h1-input{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FBFBFB;
 }

@@ -23,25 +23,25 @@
           <div class="item-third w-100 img-car"><a href="input.php"><img src="img/car1.svg" alt="#"></a></div>
         </div>
         <div class="carousel-item">
-          <div class="item-third w-100 img-car"><img src="img/car2.svg" alt="#"></div>
+          <div class="item-third w-100 img-car"><a href="input.php"><img src="img/car2.svg" alt="#"></a></div>
         </div>
         <div class="carousel-item">
-          <div class="item-third w-100 img-car"><img src="img/car3.svg" alt="#"></div>
+          <div class="item-third w-100 img-car"><a href="input.php"><img src="img/car3.svg" alt="#"></a></div>
         </div>
         <div class="carousel-item">
-          <div class="item-third w-100 img-car"><img src="img/car4.svg" alt="#"></div>
+          <div class="item-third w-100 img-car"><a href="input.php"><img src="img/car4.svg" alt="#"></a></div>
         </div>
         <div class="carousel-item">
-          <div class="item-third w-100 img-car"><img src="img/car5.svg" alt="#"></div>
+          <div class="item-third w-100 img-car"><a href="input.php"><img src="img/car5.svg" alt="#"></a></div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Предыдущий</span>
+        <span class="sr-only text">Предыдущий</span>
       </a>
       <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Cледующий</span>
+        <span class="sr-only text">Cледующий</span>
       </a>
     </div>
 </div>
