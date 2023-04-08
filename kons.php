@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back" href="index.php">
+                                        <a class="text back" href="start.php">
                                             НАЗАД
                                         </a>
                                     </div>
@@ -37,10 +37,13 @@
                             <img class="w-100" src="img/logo3.svg" alt="" srcset="">
                        </div>
                        <div class ="col-2 ml-auto">
+                        <form action="anketi.php" method="get">
                             <button class="btn-kons text">
                                 ваши заявки
                                 <img src="img/list.svg" alt="" srcset="">
                             </button>
+                        </form>
+                            
                        </div>
                        
                     </div>
@@ -58,14 +61,13 @@
             </div>
         </div>
         <div class="col-2 mx-auto mt-5">
-            <form action="car.php" method="get"></form>
+            <form action="car.php" method="GET">
             <button class="btn-katalog text text-center pt-2 pb-2 pr-5 pl-5">
-                <div class="row">
-                    <div class="mt-2">
+
                         КАТАЛОГ
-                    </div>
-                      <img src="img/garbage.svg" alt="" srcset="">
+   
             </button>
+            </form>
         </div>
     <!-- Optional JavaScript; choose one of the two! -->
 

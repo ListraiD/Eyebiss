@@ -40,24 +40,53 @@
             </div>
         </div>
         <div class="col-8 mx-auto">
-            <div class="row  mt-5">
-                <form action="input.php" method="get">
-                <button>
-                <div class="mx-auto"><img class="w-75" src="img/card1.svg" alt="" srcset="" ></div>
-                </button>
-                </form>
-                <form action="input.php" method="get">
-                <button>
-                <div class="mx-auto"><img class="w-75" src="img/card3.svg" alt="" srcset="" ></div>
-                </button>
-                </form>
-                <form action="input.php" method="get">
-                <button>
-                <div class="mx-auto"><img class="w-75" src="img/card4.svg" alt="" srcset="" ></div>
-                </button>
-                </form>
+        <div class="row">
+            <div class="col-11 mx-auto mt-2">
+                <div class="row">
+                    <div class="col-12 pt-5 pb-5">
+                        <form action="insert2.php" method="POST">
+                            <div class="row">
+                                <div class="col-10 mx-auto">
+
+                                    <div class="row">
+                                        <div class="col-10 mx-auto">
+                                            <input type="text" name="imya" class="form-control login" placeholder="Фамилия Имя Отчество">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 pt-3">
+                                <div class="col-10 mx-auto">
+                                    
+                                    <div class="row">
+                                        <div class="col-10 mx-auto">
+                                            <input type="number" name="phone" class="form-control login" placeholder="номер телефона">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 pt-3">
+                                <div class="col-10 mx-auto">
+                                    
+                                    <div class="row">
+                                        <div class="col-10 mx-auto">
+                                            <input type="text" name="problem" class="form-control login txt-area" placeholder="Опишите вашу проблему">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mx-auto mt-5 pt-3">
+                                <button class="form-control text btn-log-reg">
+                                    Подать заявку
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
         
     <!-- Optional JavaScript; choose one of the two! -->
 

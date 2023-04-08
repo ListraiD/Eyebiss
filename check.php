@@ -6,7 +6,7 @@ session_start();
 	$query = mysqli_query($con, "SELECT * FROM users WHERE login='{$_POST['login']}' AND password ='{$_POST['password']}'");
 	$stroka=$query->fetch_assoc();
 	if (mysqli_num_rows($query)>0) {
-		$_SESSION['id']=$stroka['compid'];
+		$_SESSION['id']=$stroka['id'];
         if($stroka['admin']==1){
             header('location: admin.php');
         }
