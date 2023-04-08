@@ -26,19 +26,45 @@
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back " href="index.php">
+                                        <a class="text back" href="index.php">
                                             НАЗАД
                                         </a>
                                     </div>
                                 </div>
                             </div>
                        </div>
-                       <div class ="col-2">
+                       <div class ="col-2 mt-1">
                             <img class="w-100" src="img/logo3.svg" alt="" srcset="">
                        </div>
+                       <div class ="col-2 ml-auto">
+                            <button class="btn-kons text">
+                                ваши заявки
+                                <img src="img/list.svg" alt="" srcset="">
+                            </button>
+                       </div>
+                       
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-10 mx-auto box pt-2 pb-2 pr-2 pl-2 mt-5">
+            <p class="text-center text txt">Информационный стенд</p>
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <p class="text-center text txt-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime at omnis vel et nobis illum recusandae delectus, a sapiente distinctio tempore sit debitis sequi, rem quas! Vitae, maxime dolorum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime at omnis vel et nobis illum recusandae delectus, a sapiente distinctio tempore sit debitis sequi, rem quas! Vitae, maxime dolorum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 mx-auto mt-5">
+            <button class="btn-katalog text text-center pt-2 pb-2 pr-5 pl-5">
+                <div class="row">
+                    <div class="mt-2">
+                        КАТАЛОГ
+                    </div>
+                      <img src="img/garbage.svg" alt="" srcset="">
+            </button>
         </div>
     <!-- Optional JavaScript; choose one of the two! -->
 

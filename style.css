@@ -76,3 +76,46 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
 }
+.btn-kons{
+    background: #F0F0F0;
+    border-radius: 39.0873px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10.1627px 19.5437px;
+    gap: 7.82px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.7619px;
+    line-height: 23px;
+}
+.bg-krugi{
+    background-image: url(img/bg-img.svg);
+    background-size: cover;
+}
+.txt{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+.box{
+    background: #F3F3F3;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+}
+.txt-default{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+color: #000000;
+}
+.btn-katalog{
+    background: #95C5B2;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+   
+    gap: 10px;
+}
