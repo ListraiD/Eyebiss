@@ -62,6 +62,12 @@
                                 <button class="form-control text btn-log-reg">
                                     ВОЙТИ
                                 </button>
+                                <div class="mt-3 mx-auto">
+                                    <a class="text href-reg" href="reg.php">
+                                        НЕТ АККАУНТА?
+                                    </a>
+                                </div>
+                               
                             </div>
                         </form>
                     </div>
