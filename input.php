@@ -81,6 +81,9 @@
                                                 <div class="row">
                                                     <div class="col-10 mx-auto">
                                                         <textarea type="text" name="problem" class="form-control txt-area text" placeholder="Опишите вашу проблему"></textarea>
+                                                        <textarea style="display: none;" value="" type="text" name="otvet" class="form-control txt-area text" placeholder="Опишите вашу проблему"><?php echo ' '?>
+                                                            </textarea>
+                                                        <input style="display: none;" value="<?php echo ' '?>" type="text" name="imyaadmina" class="form-control login text" placeholder="Фамилия Имя Отчество">
                                                     </div>
                                                 </div>
                                             </div>

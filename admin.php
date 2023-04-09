@@ -22,15 +22,19 @@
                         <div class="col-10 mx-auto">
                             <div class="row">
                                 <div class="col mt-5">
-                                    <img class="w-100" src="img/logo-admin.svg" alt="" srcset="">
-                                    <h1 class="h1-admin text-center text">
+                                    <a href="index.php">
+                                        <img class="w-100" src="img/logo-admin.svg" alt="" srcset="">
+                                    </a>
+                                    <h1 class="h1-admin text-center ">
                                     ЗДРАВСТВУЙТЕ, ДОРОГОЙ АДМИНИСТРАТОР!
                                     </h1>
                                     <div class="row">
                                         <div class="col-5 mx-auto ">
-                                            <button hreaf="admin-strategy.php" class="btn-admin text-center form-control text">
-                                                ПРОДОЛЖИТЬ
-                                            </button>
+                                            <form class="" action="admin-strategy.php" method="get">
+                                                <button class="btn-admin text-center form-control">
+                                                    ПРОДОЛЖИТЬ
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

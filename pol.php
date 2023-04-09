@@ -1,7 +1,7 @@
 <?php
 include "connect.php";
 session_start();
-$query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id']}'");
+$query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_POST['useriid']}'");
 ?>
 
 <!doctype html>
@@ -32,7 +32,7 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
                                 </div>
                                 <div class="col-8 ">
                                     <div class="row mt-4 mr-auto">
-                                        <a class="text back" href="kons.php">
+                                        <a class="text back" href="admin-strategy.php">
                                             НАЗАД
                                         </a>
                                     </div>
@@ -43,9 +43,9 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
                             <img class="w-100" src="img/logo3.svg" alt="" srcset="">
                        </div>
                        <div class ="col-2 ml-auto">
-                            <form action="anketi.php" method="get">
+                            <form action="admin-strategy.php" method="get">
                                 <button class="btn-kons text">
-                                    ваши заявки
+                                    все заявки
                                     <img src="img/list.svg" alt="" srcset="">
                                 </button>
                             </form>
@@ -59,6 +59,7 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
              $stroka = $query->fetch_assoc();
              
     ?>
+    <form action="pol-insert.php" method="POST">
      <div class="col-12 bg-input">
             <div class="row">
                 <div class="col bg-input2">
@@ -110,25 +111,32 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
                                     <div class="row">
                                         <div class="col-12 pt-5 pb-5 box-input">
                                             <h1 class="text-center text h1-input">ОТВЕТ ОТ КОНСУЛЬТАНТА</h1>
-                                            <div class="row mt-3">
-                                                <div class="col-10 mx-auto">
-                                                    <div class="row">
-                                                        <div class="col-10 mx-auto">
-                                                            <input value="<?php echo $stroka['imyaadmina']?>" type="text" name="imyaadmina" class="form-control login text" placeholder="Фамилия Имя Отчество">
+                                                <div class="row mt-3">
+                                                    <div class="col-10 mx-auto">
+                                                        <div class="row">
+                                                            <div class="col-10 mx-auto">
+                                                                <input value="<?php echo $stroka['imyaadmina']?>" type="text" name="imyaadmina" class="form-control login text" placeholder="Фамилия Имя Отчество">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mt-3 pt-3">
-                                                <div class="col-10 mx-auto">
-                                                    <div class="row">
-                                                        <div class="col-10 mx-auto">
-                                                            <textarea value="" type="text" name="otvet" class="form-control txt-area text" placeholder="Опишите вашу проблему"><?php echo $stroka['otvet']?>
-                                                            </textarea>
+                                                <div class="row mt-3 pt-3">
+                                                    <div class="col-10 mx-auto">
+                                                        <div class="row">
+                                                            <div class="col-10 mx-auto">
+                                                                <textarea value="" type="text" name="otvet" class="form-control txt-area text" placeholder="Напишите ваш ответ">
+                                                                    <?php echo $stroka['otvet']?>
+                                                                </textarea>
+                                                                <input style="display: none" type="" name="useriid" value="<?php echo $stroka['useriid']?>">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <div class="col-4 mx-auto mt-3 pt-3">
+                                                    <button class="form-control text btn-log-reg">
+                                                        дать ответ
+                                                    </button>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +146,7 @@ $query = mysqli_query($con, "SELECT * FROM zayavki WHERE useriid='{$_SESSION['id
                 </div>
             </div>
         </div>
-        
+        </form>  
     <?php } ?>
         
     <!-- Optional JavaScript; choose one of the two! -->

@@ -65,7 +65,7 @@
                                 <div class="col-10 mx-auto mt-5">
                                     <div class="row">
                                         <div class="col-10 mt-4 mx-auto">
-                                                <a href="gis.php"><img src="img/card2.svg" alt="" srcset=""></a>
+                                                <a href="gis1.php"><img src="img/card2.svg" alt="" srcset=""></a>
                                         </div>
                                         </div>
                                     </div>
